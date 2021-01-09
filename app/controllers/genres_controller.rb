@@ -1,6 +1,6 @@
 require 'rack-flash'
 
-class GenresController < ApplicationController
+class GenresController < Sinatra::Base
   use Rack::Flash
  get '/genres' do
     @genres = Genre.all
