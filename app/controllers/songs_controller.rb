@@ -1,7 +1,7 @@
 require 'sinatra/base'
 require 'rack-flash'
 
-class SongsController < Sinatra::Base
+class SongsController < ApplicationController
   enable :sessions
   use Rack::Flash
   register Sinatra::ActiveRecordExtension
