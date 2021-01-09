@@ -1,6 +1,6 @@
 require 'rack-flash'
 
-class SongsController < ApplicationController
+class SongsController < Sinatra::Base
   use Rack::Flash
      get '/songs' do
     @songs = Song.all
